@@ -85,7 +85,6 @@ const editTask = (message, isDone, req, res) => {
     message,
     isDone: isDone == "true" ? true : false,
   };
-  console.log(data);
   fs.writeFileSync("./db/data.json", JSON.stringify(data));
   res.writeHead(302, { Location: "/" });
   res.end();
