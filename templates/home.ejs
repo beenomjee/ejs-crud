@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="top">
+    <h2>All Tasks List</h2>
+  </div>
+  <div class="bottom">
+    <% tasks.forEach((task)=>{ %>
+    <div class="task">
+      <div class="left">
+        <h6 <%if(task.isDone){%>class="done"<%}%>><%-task.message-%></h6>
+      </div>
+      <div class="right">
+        <a href="/edit/<%-task.id-%>" class="left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            viewBox="0 96 960 960"
+            width="48"
+          >
+            <path
+              d="M180 876h44l443-443-44-44-443 443v44Zm614-486L666 262l42-42q17-17 42-17t42 17l44 44q17 17 17 42t-17 42l-42 42Zm-42 42L248 936H120V808l504-504 128 128Zm-107-21-22-22 44 44-22-22Z"
+            />
+          </svg>
+        </a>
+        <a href="/delete/<%-task.id-%>" class="right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            viewBox="0 96 960 960"
+            width="48"
+          >
+            <path
+              d="m361 757 119-121 120 121 47-48-119-121 119-121-47-48-120 121-119-121-48 48 120 121-120 121 48 48ZM261 936q-24 0-42-18t-18-42V306h-41v-60h188v-30h264v30h188v60h-41v570q0 24-18 42t-42 18H261Zm438-630H261v570h438V306Zm-438 0v570-570Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <hr />
+    <% } );%>
+  </div>
+</div>

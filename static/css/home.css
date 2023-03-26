@@ -1,0 +1,59 @@
+.container {
+  max-width: 400px;
+  margin: 50px auto 0 auto;
+}
+
+.container .top > h2 {
+  background-color: #f64c72;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.container > .bottom {
+  margin-top: 20px;
+}
+
+.container > .bottom > div.task {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.container > .bottom > div.task > .left {
+  flex: 1;
+}
+
+.container > .bottom > div.task > .left > h6 {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.container > .bottom > div.task > .left > h6.done {
+  text-decoration: line-through;
+}
+
+.container > .bottom > div.task > .right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container > .bottom > div.task > .right > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(7, 254, 7);
+  padding: 0 5px;
+  border-radius: 2px;
+}
+.container > .bottom > div.task > .right > a:nth-child(2) {
+  background-color: red;
+}
+
+.container > .bottom > div.task > .right > a > svg {
+  fill: white;
+  width: 25px;
+}

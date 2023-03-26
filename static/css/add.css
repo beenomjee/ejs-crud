@@ -1,0 +1,52 @@
+.container {
+  max-width: 400px;
+  margin: 50px auto 0 auto;
+}
+
+.container .top > h2 {
+  background-color: #f64c72;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.container > .bottom {
+  margin-top: 20px;
+}
+
+.container > .bottom > form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.container > .bottom > form > label {
+  font-size: 20px;
+}
+
+.container > .bottom > form > input[type="text"] {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.container > .bottom > form > button {
+  border: 1px solid #f64c72;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #f64c72;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.container > .bottom > form > button:hover {
+  background-color: transparent;
+  color: #f64c72;
+}
